@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ОСНОВА */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1a2e, #3a0a4a);
+  color: #9cff6c;
+
+  font-family: 'Press Start 2P', cursive;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  text-align: center;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* СЧЁТ */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(15px, 5vw, 40px);
+  margin-bottom: clamp(20px, 5vw, 40px);
+}
+
+.scoreboard p {
+  font-size: clamp(10px, 2.5vw, 14px);
+  margin-bottom: 10px;
+}
+
+.scoreboard h1 {
+  font-size: clamp(28px, 8vw, 60px);
+}
+
+.divider {
+  font-size: clamp(20px, 6vw, 40px);
+}
+
+/* ТЕКСТ */
+#resultText {
+  font-size: clamp(12px, 3vw, 18px);
+  margin-bottom: 30px;
+  min-height: 20px;
+}
+
+/* КНОПКИ */
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: clamp(15px, 4vw, 25px);
+  flex-wrap: wrap;
+}
+
+.choices button {
+  width: clamp(70px, 20vw, 110px);
+  height: clamp(70px, 20vw, 110px);
+
+  font-size: clamp(24px, 6vw, 40px);
+
+  border-radius: 20px;
+  border: none;
+
+  cursor: pointer;
+
+  background: rgba(0, 0, 0, 0.4);
+  color: #9cff6c;
+
+  box-shadow: 0 0 15px rgba(156, 255, 108, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+.choices button:hover {
+  transform: scale(1.1);
+}
+
+/* RESET */
+.reset {
+  margin-top: 30px;
+
+  padding: clamp(10px, 3vw, 15px) clamp(20px, 5vw, 30px);
+
+  border-radius: 20px;
+  border: none;
+
+  background: #9cff6c;
+  color: black;
+
+  cursor: pointer;
+
+  font-size: clamp(10px, 2.5vw, 14px);
+}
+
+/* ОПИСАНИЕ */
+.info {
+  max-width: 700px;
+  margin-top: 50px;
+  padding: 0 10px;
+
+  font-size: clamp(10px, 2.8vw, 14px);
+  line-height: 1.8;
+
+  color: #ccc;
+}
+
+.info h3 {
+  margin-bottom: 20px;
+  color: #9cff6c;
+  font-size: clamp(12px, 3vw, 18px);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  color: #777;
+  font-size: clamp(10px, 2.5vw, 12px);
+}

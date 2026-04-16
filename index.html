@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Камень Ножницы Бумага</title>
+
+  <!-- ВАЖНО -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="scoreboard">
+    <div>
+      <p>Вы</p>
+      <h1 id="userScore">0</h1>
+    </div>
+
+    <div class="divider">:</div>
+
+    <div>
+      <p>Компьютер</p>
+      <h1 id="compScore">0</h1>
+    </div>
+  </div>
+
+  <h2 id="resultText">Сделайте ход</h2>
+
+  <div class="choices">
+    <button onclick="play('rock')">✊</button>
+    <button onclick="play('paper')">✋</button>
+    <button onclick="play('scissors')">✌</button>
+  </div>
+
+  <button class="reset" onclick="resetGame()">Заново</button>
+
+</div>
+
+<div class="info">
+  <h3>Что это за игра?</h3>
+  <p>
+    Камень, ножницы, бумага — это классическая игра,
+    в которой игрок и компьютер одновременно выбирают один из трёх вариантов.
+  </p>
+
+  <p>
+    Правила простые:
+    камень побеждает ножницы,
+    ножницы побеждают бумагу,
+    бумага побеждает камень.
+  </p>
+
+  <p>
+    Ваша задача — набрать больше очков, чем компьютер.
+  </p>
+</div>
+
+<footer class="footer">
+  <p>© amdevelopersgroup</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
